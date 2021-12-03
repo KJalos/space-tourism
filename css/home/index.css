@@ -52,12 +52,10 @@ h5 {
 .container {
     position: relative;
     width: 100%;
-    height: 900px;
 
 }
 
 header {
-    position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -77,7 +75,7 @@ header {
 }
 
 .navbar {
-    width: 53%;
+    width: 860px;
     max-width: 100%;
     background-color: var(--color-white-alpha);
     backdrop-filter: blur(81px);
@@ -86,6 +84,7 @@ header {
 
 .nav-links {
     margin: 0;
+    margin-left: 14%;
     list-style: none;
     padding: 0;
     display: flex;
@@ -95,9 +94,9 @@ header {
     height: 100%;
 }
 
-.nav-link-container {
+li.nav-link-container {/* li */
     height: 100%;
-    margin-left:2em;
+    margin-left:50px;
 }
 
 .nav-link {
@@ -130,7 +129,6 @@ header {
 }
 
 .hr {
-    width: 38%;
     border-top: 1px solid var(--color-skyblue-light);
     z-index: 5;
     position: absolute;
@@ -139,11 +137,12 @@ header {
 }
 
 .content-container {
-    position: absolute;
-    width: 32%;
-    left: 15%;
-    bottom: 25%;
-    
+    position: relative;
+    max-width: 450px;
+    border-top:1px solid var(--color-skyblue-light);
+    padding-top: 25vh;
+    margin-top: -48px;
+    margin-left: 15vw;
 }
 
 .title{
@@ -160,18 +159,16 @@ header {
 
 .explore-btn {
     font-size: 32px;
-    position: absolute;
     bottom: 25%;
     right: 15%;
-    width: 150px;
-    height: 150px;
+    width: 274px;
+    height: 274px;
     border-radius: 50%;
     background-color: var(--color-white);
     color:#000;
-    line-height: 150px;
+    line-height: 274px;
     text-align: center;
     cursor: pointer;
-
     /* Typography */
 
 }
@@ -186,4 +183,12 @@ header {
 
 .subtitle {
     margin-bottom: 18px;
+}
+
+@media (max-width:768px) {
+    .content-container {
+        border: none;
+        text-align: center;
+        margin: -48px auto 0 auto;
+    }
 }
