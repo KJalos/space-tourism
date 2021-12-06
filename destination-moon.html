@@ -5,7 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./css/home/index.css">
+  <link rel="stylesheet" href="./css/destination/destination.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body>
@@ -15,34 +19,77 @@
       <div class="logo-container">
         <img src="./assets/shared/logo.svg" alt="Website logo" class="logo">
       </div>
-      
+      <div class="hr"></div>
       <nav class="navbar">
         <ul class="nav-links">
-          <li class="nav-link-container"><a href="./index.html" class="nav-link active"><span>00</span>&nbsp;Home</a></li>
-          <li class="nav-link-container"><a href="./destination-moon.html" class="nav-link"><span>01</span>&nbsp;Destination<div class="underline"></div></a></li>
+          <li class="nav-link-container"><a href="./index.html" class="nav-link "><span>00</span>&nbsp;Home<div class="underline"></div></a></li>
+          <li class="nav-link-container"><a href="./destination-moon.html" class="nav-link active"><span>01</span>&nbsp;Destination<div class="underline"></div></a></li>
           <li class="nav-link-container"><a href="" class="nav-link"><span>02</span>&nbsp;Crew<div class="underline"></div></a></li>
           <li class="nav-link-container"><a href="" class="nav-link"><span>03</span>&nbsp;Technology<div class="underline"></div></a></li>
         </ul>
       </nav>
     </header>
+    
+    <main class="main-container content-sizing">
+      <div class="subheader make-flex">
+        <h5 class="sub-title">01 Pick your destination</h5>
+        <nav class="page-nav">
+          <ul class="nav-links ">
+            <li class="nav-link-container">
+              <a href="./destination-moon.html" class="nav-link active">Moon</a>
+              <div class="underline"></div>
+            </li>
+            <li class="nav-link-container">
+              <a href="./destination-mars.html" class="nav-link">Mars<div class="underline"></div></a>
+              
+            </li>
+            <li class="nav-link-container">
+              <a href="./destination-europa.html" class="nav-link">Europa<div class="underline"></div></a>
+              
+            </li>
+            <li class="nav-link-container">
+              <a href="./destination-titan.html" class="nav-link">Titan<div class="underline"></div></a>
+              
+            </li>
+          </ul>
+        </nav>
+      </div>
 
-  01 Pick your destination
+      
 
-  Moon
-  Mars
-  Europa
-  Titan
-
-  Moon
-
-  See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-  regain perspective and come back refreshed. While you’re there, take in some history 
-  by visiting the Luna 2 and Apollo 11 landing sites.
-
-  Avg. distance
-  384,400 km
-
-  Est. travel time
-  3 days
+      <section id="moon" class="subsection make-flex">
+        <div class="obj-img-container">
+          <img src="./assets/destination/image-moon.webp" alt="The Moon">
+        </div>
+        <div class="text">
+          <h2>Moon</h2>
+          <p class="body-text obj-description">See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+          regain perspective and come back refreshed. While you’re there, take in some history 
+          by visiting the Luna 2 and Apollo 11 landing sites.</p>
+          <hr>
+          
+          <div class="info-container make-flex">
+            <div class="distance-info-container">
+              <p class="body-text">Avg. distance</p>
+              <h5 id="distance">384,400 km</h5>
+            </div>
+            <div class="travel-time-info-container">
+              <p class="body-text">Est. travel time</p>
+              <h5 id="travel-time">3 days</h5>
+            </div>
+          </div>
+        </div> 
+      </section>
+      <!-- <section id="mars" class="subsection">
+        <h2>Mars</h2>
+      </section>
+      <section id="europa" class="subsection">
+        <h2>Europa</h2>
+      </section>
+      <section id="titan" class="subsection">
+        <h2>Titan</h2>
+      </section> -->
+    </main>
+  </div>
 </body>
 </html>
