@@ -12,17 +12,6 @@ body {
     /* border: 1px solid magenta; */
 }
 
-.content-sizing {
-    width: 1100px;
-    max-width: 95%;
-    margin: 0 auto;
-}
-
-.make-flex {
-    display: flex;
-    justify-content: space-evenly;
-}
-
 .sub-title {
     align-self: flex-start;
 }

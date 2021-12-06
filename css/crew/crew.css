@@ -1,0 +1,10 @@
+:root {
+    --color-gray:#979797;
+    --color-white:#fff;
+    --color-skyblue-light:hsl(231,77%,90%);
+    --color-white-alpha:rgba(255,255,255,.04);
+}
+
+body {
+    background-image: url("../../assets/crew/background-crew-desktop.jpg");
+}
